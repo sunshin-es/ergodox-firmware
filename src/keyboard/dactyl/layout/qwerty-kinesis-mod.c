@@ -348,8 +348,11 @@ NULL,
  ktrans, ktrans,
  ktrans, ktrans, ktrans,
  ktrans, ktrans, kprrel ),
+// ktrans, ktrans, kprrel ) };
 
-
+// This following part causes problems for compiling
+// Deleting some NULLS here probably shouldn't harm functionality since this seems to be
+// some kind of gap-closer
 	KB_MATRIX_LAYER(  // release: layer 3: nothing (just making sure unused
 			  // functions don't get compiled out)
 // unused
@@ -358,12 +361,12 @@ NULL,
  kprrel, lpush8,  lpop8,   NULL,   NULL,   NULL,   NULL,   NULL,
    ktog, lpush9,  lpop9,   NULL,   NULL,   NULL,   NULL,   NULL,
  ktrans,lpush10, lpop10,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush1,  lpop1,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush2,  lpop2, dbtldr,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush3,  lpop3,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush4,  lpop4, s2kcap,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush5,  lpop5,slpunum,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush6,  lpop6,slponum,   NULL,   NULL,   NULL,   NULL,   NULL,
+ lpush1,  lpop1,   NULL,   NULL,   NULL,   NULL,   NULL,
+ lpush2,  lpop2, dbtldr,   NULL,   NULL,   NULL,   NULL,
+ lpush3,  lpop3,   NULL,   NULL,   NULL,   NULL,   NULL,
+ lpush4,  lpop4, s2kcap,   NULL,   NULL,   NULL,   NULL,
+ lpush5,  lpop5,slpunum,   NULL,   NULL,   NULL,   NULL,
+ lpush6,  lpop6,slponum,   NULL,   NULL,   NULL,   NULL,
  lpush7,  lpop7,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL )
 
 };
