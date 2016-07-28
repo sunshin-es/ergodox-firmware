@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python
 # -----------------------------------------------------------------------------
 # Copyright (c) 2012 Ben Blazak <benblazak.dev@gmail.com>
 # Released under The MIT License (MIT) (see "license.md")
@@ -420,4 +420,3 @@ keycode_to_string = {
 
 if __name__ == '__main__':
 	main()
-
