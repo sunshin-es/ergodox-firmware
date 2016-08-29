@@ -7,8 +7,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__MATRIX_h
-	#define KEYBOARD__ERGODOX__MATRIX_h
+#ifndef KEYBOARD__DACTYL__MATRIX_h
+	#define KEYBOARD__DACTYL__MATRIX_h
 
 	// --------------------------------------------------------------------
 
@@ -55,9 +55,9 @@
 			k30,k31,k32,k33,k34,k35,			\
 			k20,k21,k22,k23,k24,k25,			\
 			k10,k11,k12,k13,k14,				\
-			                        k05,k06,		\
-			                    k15,k16,k04,		\
-					    k03,k02,k01,		\
+			                        k05,k00,		\
+			                            k04,		\
+			                    k03,k02,k01,		\
 									\
 			/* right hand, spatial positions */		\
 			        k58,k59,k5A,k5B,k5C,k5D,		\
@@ -65,13 +65,13 @@
 			        k38,k39,k3A,k3B,k3C,k3D,		\
 			        k28,k29,k2A,k2B,k2C,k2D,		\
 			            k19,k1A,k1B,k1C,k1D,		\
-			k07,k08,					\
-			k09,k17,k18,					\
+			k0D,k08,   					\
+			k09,      					\
 			k0C,k0B,k0A )					\
 									\
 	/* matrix positions */						\
-	{{  na,k01,k02,k03,k04,k05,k06, k07,k08,k09,k0A,k0B,k0C, na },	\
-	 { k10,k11,k12,k13,k14,k15,k16, k17,k18,k19,k1A,k1B,k1C,k1D },	\
+	{{ k00,k01,k02,k03,k04,k05, na,  na,k08,k09,k0A,k0B,k0C,k0D },	\
+	 { k10,k11,k12,k13,k14, na, na,  na, na,k19,k1A,k1B,k1C,k1D },	\
 	 { k20,k21,k22,k23,k24,k25, na,  na,k28,k29,k2A,k2B,k2C,k2D },	\
 	 { k30,k31,k32,k33,k34,k35, na,  na,k38,k39,k3A,k3B,k3C,k3D },	\
 	 { k40,k41,k42,k43,k44,k45, na,  na,k48,k49,k4A,k4B,k4C,k4D },	\
@@ -88,7 +88,7 @@
 			kxx,kxx,kxx,kxx,kxx,kxx,		\
 			kxx,kxx,kxx,kxx,kxx,			\
 			                        kxx,kxx,	\
-			                    kxx,kxx,kxx,	\
+			                            kxx,	\
 			                    kxx,kxx,kxx,	\
 								\
 			        kxx,kxx,kxx,kxx,kxx,kxx,	\
@@ -97,7 +97,7 @@
 			        kxx,kxx,kxx,kxx,kxx,kxx,	\
 			            kxx,kxx,kxx,kxx,kxx,	\
 			kxx,kxx,				\
-			kxx,kxx,kxx,				\
+			kxx,     				\
 			kxx,kxx,kxx )				\
 
 #endif
