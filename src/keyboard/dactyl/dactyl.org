@@ -14,6 +14,14 @@
   (setq coding-system-for-write 'utf-8-unix)
   #+END_SRC
 
+  This mod only works with the qwerty-kinesis-mod layout.
+
+  Create a fresh build:
+  #+BEGIN_SRC sh
+  cd src/keyboard/dactyl/
+  make
+  #+END_SRC
+
 * The mod
   I created a new "keyboard" in /src/keyboard named "dactyl".
   Therefor i simply copied the ergodox folder.
@@ -52,7 +60,6 @@
 
   #+RESULTS:
   - [ ] circuit-diagram.svg
-    - does this update automatically when I'm done?
   - [X] controller.c
     - generic
   - [X] controller.h
