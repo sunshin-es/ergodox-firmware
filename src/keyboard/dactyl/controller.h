@@ -7,8 +7,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__CONTROLLER_h
-	#define KEYBOARD__ERGODOX__CONTROLLER_h
+#ifndef KEYBOARD__DACTYL__CONTROLLER_h
+	#define KEYBOARD__DACTYL__CONTROLLER_h
 
 	#include <stdbool.h>
 	#include <stdint.h>

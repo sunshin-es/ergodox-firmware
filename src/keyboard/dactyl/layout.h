@@ -9,8 +9,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__LAYOUT_h
-	#define KEYBOARD__ERGODOX__LAYOUT_h
+#ifndef KEYBOARD__DACTYL__LAYOUT_h
+	#define KEYBOARD__DACTYL__LAYOUT_h
 
 	// --------------------------------------------------------------------
 
