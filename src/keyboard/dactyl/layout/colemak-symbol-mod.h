@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------
  * ergoDOX : layout : COLEMAK : exports
- * 
+ *
  * Submitted by Jason Trill [jjt] (https://github.com/jjt)
  * ----------------------------------------------------------------------------
  * Copyright (c) 2012 Ben Blazak <benblazak.dev@gmail.com>
@@ -9,8 +9,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__LAYOUT__COLEMAK_h
-	#define KEYBOARD__ERGODOX__LAYOUT__COLEMAK_h
+#ifndef KEYBOARD__DACTYL__LAYOUT__COLEMAK_h
+	#define KEYBOARD__DACTYL__LAYOUT__COLEMAK_h
 
 	#include "../controller.h"
 
@@ -29,4 +29,3 @@
 	#include "./default--matrix-control.h"
 
 #endif
-

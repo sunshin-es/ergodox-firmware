@@ -7,8 +7,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__LAYOUT__DVORAK_h
-	#define KEYBOARD__ERGODOX__LAYOUT__DVORAK_h
+#ifndef KEYBOARD__DACTYL__LAYOUT__DVORAK_h
+	#define KEYBOARD__DACTYL__LAYOUT__DVORAK_h
 
 	#include "../controller.h"
 
@@ -27,4 +27,3 @@
 	#include "./default--matrix-control.h"
 
 #endif
-

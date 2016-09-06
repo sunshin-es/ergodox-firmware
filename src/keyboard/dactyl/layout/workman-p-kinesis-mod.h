@@ -7,8 +7,8 @@
  * ------------------------------------------------------------------------- */
 
 
-#ifndef KEYBOARD__ERGODOX__LAYOUT__WORKMAN_P_h
-	#define KEYBOARD__ERGODOX__LAYOUT__WORKMAN_P_h
+#ifndef KEYBOARD__DACTYL__LAYOUT__WORKMAN_P_h
+	#define KEYBOARD__DACTYL__LAYOUT__WORKMAN_P_h
 
 	#include "../controller.h"
 
@@ -27,4 +27,3 @@
 	#include "./default--matrix-control.h"
 
 #endif
-
