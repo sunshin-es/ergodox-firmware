@@ -340,7 +340,7 @@ NULL,
                                                          ktrans,
                                          ktrans, ktrans, ktrans,
 // right hand
-                ktrans,   NULL, kprrel, kprrel, kprrel, ktrans,
+                ktrans, kprrel, kprrel, kprrel, kprrel, ktrans,
                 ktrans, kprrel, kprrel, kprrel, kprrel, ktrans,
                 ktrans, kprrel, kprrel, kprrel, kprrel, ktrans,
                 ktrans, kprrel, kprrel, kprrel, kprrel, ktrans,
