@@ -97,7 +97,6 @@ $(ROOT)/firmware.%: firmware
 
 
 dist: \
-	checkin \
 	build-dir \
 	$(ROOT)/firmware.hex \
 	$(ROOT)/firmware.eep \
