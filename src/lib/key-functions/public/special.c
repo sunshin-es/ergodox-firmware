@@ -28,7 +28,47 @@
 
 
 // ----------------------------------------------------------------------------
+// #define KEYPAD_1_End                0x59  // v  v   v     84/101/104
+// #define KEYPAD_2_DownArrow          0x5A  // v  v   v     84/101/104
+// #define KEYPAD_3_PageDown           0x5B  // v  v   v     84/101/104
+// #define KEYPAD_4_LeftArrow          0x5C  // v  v   v     84/101/104
+// #define KEYPAD_5                    0x5D  // v  v   v     84/101/104
+// #define KEYPAD_6_RightArrow         0x5E  // v  v   v     84/101/104
+// #define KEYPAD_7_Home               0x5F  // v  v   v     84/101/104
+// #define KEYPAD_8_UpArrow            0x60  // v  v   v     84/101/104
+// #define KEYPAD_9_PageUp             0x61  // v  v   v     84/101/104
+// #define KEYPAD_0_Insert             0x62  // v  v   v     84/101/104
+void kb_send_de_ae(void)
+{
+    const uint8_t code = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_8_UpArrow};
+    kb_send_altcode(code);
+}
+    
 
+void kb_send_altcode(uint8_t alt_code)
+{
+    // Press the alt key
+    _kbfun_press_release(true, KEY_LeftAlt);
+    usb_keyboard_send();
+    //usb_extra_consumer_send();
+    //_delay_ms(MAKEFILE_DEBOUNCE_TIME);
+    
+    for (uint8_t i=0; i<4; i++)
+    {
+        // Press the key
+        _kbfun_press_release(true, alt_code[i]);
+        usb_keyboard_send();
+        
+        // release the key
+        _kbfun_press_release(false, alt_code[i]);
+        usb_keyboard_send();
+    }
+    
+    // Release the alt key
+    _kbfun_press_release(false, KEY_LeftAlt);
+    usb_keyboard_send();
+    
+}
 
 /*
  * [name]

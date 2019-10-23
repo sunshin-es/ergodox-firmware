@@ -30,7 +30,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
       _esc,         _A,        _R,          _S,           _T,    _G,
    _shiftL,         _Z,        _X,          _C,           _D,    _V,
     _ctrlL,  _bracketL, _bracketR,   _bracketL,    _bracketR,
-                                                           1,     3,
+                                                        _del,  _del,
                                                               _guiL,
                                                    _bs,   1,  _altL,
 // right hand
@@ -39,7 +39,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
            _K,      _N,      _E,      _I,         _O,    _quote,
            _M,      _H,  _comma, _period, _semicolon,   _shiftR,
                _arrowL, _arrowD, _arrowU,    _arrowR,    _ctrlR,
-_bracketL,  _bracketR,
+_backslash,  _2,
 _backslash,
 3, _enter,  _space ),
 
@@ -154,6 +154,7 @@ _backslash,
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
 #define  slpunum  &kbfun_layer_push_numpad
 #define  slponum  &kbfun_layer_pop_numpad
+#define  dea      &kb_send_de_ae
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -169,7 +170,7 @@ NULL,
  kprrel, kprrel,  kprrel,  kprrel, kprrel, kprrel,
  s2kcap, kprrel,  kprrel,  kprrel, kprrel, kprrel,
  kprrel, sshprre, sshprre, kprrel, kprrel,
-                                                 lpush1,slpunum,
+                                                 kprrel, kprrel,
                                                          kprrel,
                                          kprrel, lpush1, kprrel,
 // right hand
@@ -178,7 +179,7 @@ NULL,
                  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
                  kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
                          kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel,
+ kprrel, sshprre,
  kprrel,
  slpunum, kprrel, kprrel ),
 
@@ -189,7 +190,7 @@ NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
- ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+ ktrans, dea,    ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
@@ -267,7 +268,7 @@ NULL,
  kprrel, kprrel,  kprrel,  kprrel, kprrel, kprrel,
  s2kcap, kprrel,  kprrel,  kprrel, kprrel, kprrel,
  kprrel, sshprre, sshprre, kprrel, kprrel,
-                                                  lpop1, kprrel,
+                                                 kprrel, kprrel,
                                                          kprrel,
                                          kprrel, lpop1,  kprrel,
 // right hand
@@ -276,7 +277,7 @@ NULL,
                 kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
                 kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
                         kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel,
+ kprrel, sshprre,
  kprrel,
  kprrel, kprrel, kprrel ),
 
@@ -290,7 +291,7 @@ NULL,
  ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans, ktrans, ktrans, ktrans, ktrans,
-                                                 ktrans,   NULL,
+                                                 ktrans, ktrans,
                                                          ktrans,
                                          ktrans, ktrans, ktrans,
 // right hand
@@ -336,7 +337,7 @@ NULL,
  ktrans, kprrel, kprrel, kprrel, ktrans, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, kprrel, ktrans, ktrans, ktrans,
-                                                slponum, ktrans,
+                                                 ktrans, ktrans,
                                                          ktrans,
                                          ktrans, ktrans, ktrans,
 // right hand

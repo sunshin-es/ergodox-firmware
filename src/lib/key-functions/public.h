@@ -72,6 +72,7 @@
 	void kbfun_layer_push_numpad             (void);
 	void kbfun_layer_pop_numpad              (void);
 	void kbfun_mediakey_press_release        (void);
+	void kb_send_de_ae                       (void);
 
 #endif
 
