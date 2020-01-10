@@ -341,15 +341,15 @@ NULL,
                                                          ktrans,
                                          ktrans, ktrans, ktrans,
 // right hand
-                ktrans, kptrans, kptrans, kptrans, kptrans, ktrans,
+                ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
                 ktrans, sshprre, sshprre, kprrel,  sshprre, ktrans,
                 kprrel, kprrel,  kprrel,  kprrel,  kprrel,  ktrans,
-                ktrans, kptrans, kptrans, kptrans, kptrans, ktrans,
-                        kptrans, kptrans, kptrans, kptrans, ktrans,
+                ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+                        ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans,
  ktrans,
- slponum, ktrans, kptrans ),
-// ktrans, ktrans, kptrans ) };
+ slponum, ktrans, ktrans ),
+// ktrans, ktrans, ktrans ) };
 
 // This following part causes problems for compiling
 // Deleting some NULLS here probably shouldn't harm functionality since this seems to be

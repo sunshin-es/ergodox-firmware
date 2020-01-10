@@ -26,6 +26,7 @@
 #define  IS_PRESSED    main_arg_is_pressed
 #define  WAS_PRESSED   main_arg_was_pressed
 
+void kb_send_altcode(const uint8_t *alt_code);
 
 // ----------------------------------------------------------------------------
 // #define KEYPAD_1_End                0x59  // v  v   v     84/101/104
@@ -40,12 +41,12 @@
 // #define KEYPAD_0_Insert             0x62  // v  v   v     84/101/104
 void kb_send_de_ae(void)
 {
-    const uint8_t code = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_8_UpArrow};
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_8_UpArrow};
     kb_send_altcode(code);
 }
     
 
-void kb_send_altcode(uint8_t alt_code)
+void kb_send_altcode(const uint8_t *alt_code)
 {
     // Press the alt key
     _kbfun_press_release(true, KEY_LeftAlt);
