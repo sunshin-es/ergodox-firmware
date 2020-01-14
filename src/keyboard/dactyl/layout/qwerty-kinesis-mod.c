@@ -154,8 +154,15 @@ _2,
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
 #define  slpunum  &kbfun_layer_push_numpad
 #define  slponum  &kbfun_layer_pop_numpad
-#define  dea      &kb_send_de_ae
 
+// German
+#define  dea      &kb_send_de_ae
+#define  deA      &kb_send_de_Ae
+#define  deo      &kb_send_de_oe
+#define  deO      &kb_send_de_Oe
+#define  des      &kb_send_de_ss
+#define  deu      &kb_send_de_ue
+#define  deU      &kb_send_de_Ue
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
 
@@ -190,8 +197,8 @@ NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
- ktrans, dea,    ktrans, ktrans, ktrans, ktrans,
- ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+ ktrans, dea,    deo,    des,    deu,    ktrans,
+ ktrans, deA,    deO,    ktrans, deU,    ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                                          ktrans,
@@ -287,9 +294,9 @@ NULL,
 NULL,
 // left hand
  ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
+ ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+ ktrans, kprrel, kprrel, kprrel, kprrel, ktrans,
+ ktrans, kprrel, kprrel, ktrans, kprrel, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                                          ktrans,

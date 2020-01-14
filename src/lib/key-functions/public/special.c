@@ -44,7 +44,42 @@ void kb_send_de_ae(void)
     const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_8_UpArrow};
     kb_send_altcode(code);
 }
-    
+
+void kb_send_de_Ae(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_1_End, KEYPAD_9_PageUp, KEYPAD_6_RightArrow};
+    kb_send_altcode(code);
+}
+
+void kb_send_de_oe(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_4_LeftArrow, KEYPAD_6_RightArrow};
+    kb_send_altcode(code);
+}
+
+void kb_send_de_Oe(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_1_End, KEYPAD_4_LeftArrow};
+    kb_send_altcode(code);
+}
+
+void kb_send_de_ss(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_3_PageDown};
+    kb_send_altcode(code);
+}
+
+void kb_send_de_ue(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_5, KEYPAD_2_DownArrow};
+    kb_send_altcode(code);
+}
+
+void kb_send_de_Ue(void)
+{
+    const uint8_t code[4] = {KEYPAD_0_Insert, KEYPAD_2_DownArrow, KEYPAD_2_DownArrow, KEYPAD_0_Insert};
+    kb_send_altcode(code);
+}
 
 void kb_send_altcode(const uint8_t *alt_code)
 {

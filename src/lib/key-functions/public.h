@@ -73,6 +73,12 @@
 	void kbfun_layer_pop_numpad              (void);
 	void kbfun_mediakey_press_release        (void);
 	void kb_send_de_ae                       (void);
+    void kb_send_de_Ae                       (void);
+    void kb_send_de_oe                       (void);
+    void kb_send_de_Oe                       (void);
+    void kb_send_de_ss                       (void);
+    void kb_send_de_ue                       (void);
+    void kb_send_de_Ue                       (void);
 
 #endif
 
