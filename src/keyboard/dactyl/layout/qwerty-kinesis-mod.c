@@ -32,7 +32,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _ctrlL,         _2,    _grave,  _backslash,   _backslash,
                                                         _del,  _del,
                                                               _guiL,
-                                                   _bs,   1,  _altR,
+                                                   _bs,   1,  _guiL,
 // right hand
            _6,      _7,      _8,      _9,         _0,     _dash,
            _J,      _L,      _U,      _Y,     _slash,    _equal,
