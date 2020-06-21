@@ -39,9 +39,9 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
            _K,      _N,      _E,      _I,         _O,    _quote,
            _M,      _H,  _comma, _period, _semicolon,   _shiftR,
                _arrowL,   _dash,  _ctrlR,    _arrowR,    _ctrlR,
-KEY_Cancel,  _altR,
+KEY_Cancel,  3,
 _altR,
-3, _enter,  _space ),
+_altR, _enter,  _space ),
 
 
 	KB_MATRIX_LAYER(  // layout: layer 1: function and symbol keys
@@ -49,7 +49,7 @@ _altR,
 0,
 // left hand
   0,        _F1,        _F2,       _F3,       _F4,       _F5,
-  0,          0,          0,   _arrowU,         0,         0,
+  0,         _2,          0,   _arrowU,         0,         0,
   0,          0,    _arrowL,   _arrowD,   _arrowR,         0,
   0,          0,          0,         0,         0,         0,
   0,          0,          0,         0,         0,
@@ -95,7 +95,7 @@ _altR,
 0,
 // left hand
 0,       0,       0,       0,       0,  0,
-0,       0,       0,       0,       0,  0,
+0,      _1,      _2,      _3,      _4, _5,
 0,      _1,      _2,      _3,      _4, _5,
 0,       0,       0,       0,       0,  0,
 0,       0,       0,       0,       0,
@@ -104,7 +104,7 @@ _altR,
                   0, 0, 0,
 // right hand
    0,   0,       0,  0,     0,      0,
-   0,  _slash,  _8, _dash,  _equal, 0,
+  _6,  _7,      _8, _9,    _0,      0,
   _6,  _7,      _8, _9,    _0,      0,
    0,   0,       0,  0,     0,      0,
         0,       0,  0,     0,      0,
@@ -186,9 +186,9 @@ NULL,
                  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
                  kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
                          kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel,
+ kprrel, slpunum,
  kprrel,
- slpunum, kprrel, kprrel ),
+ kprrel, kprrel, kprrel ),
 
 
 	KB_MATRIX_LAYER(  // press: layer 1: function and symbol keys
@@ -196,7 +196,7 @@ NULL,
 NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans, ktrans, ktrans, kprrel, ktrans, ktrans,
+ ktrans, sshprre, ktrans, kprrel, ktrans, ktrans,
  ktrans, ktrans, kprrel, kprrel, kprrel, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
@@ -242,7 +242,7 @@ NULL,
 NULL,
 // left hand
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
- ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
+ ktrans, sshprre, sshprre, sshprre, sshprre, sshprre,
  ktrans, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
@@ -251,13 +251,13 @@ NULL,
                                          ktrans, ktrans, ktrans,
 // right hand
                 ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
-                ktrans, kprrel, sshprre, kprrel, sshprre, ktrans,
+                sshprre, sshprre, sshprre, sshprre, sshprre, ktrans,
                 kprrel, kprrel, kprrel, kprrel, kprrel, ktrans,
                 ktrans, ktrans, ktrans, ktrans, ktrans, ktrans,
                         ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans,
  ktrans,
- slponum, ktrans, ktrans ),
+ ktrans, ktrans, ktrans ),
 
 };
 
@@ -284,7 +284,7 @@ NULL,
                 kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
                 kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
                         kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel,
+ kprrel, slponum,
  kprrel,
  kprrel, kprrel, kprrel ),
 
@@ -355,7 +355,7 @@ NULL,
                         ktrans, ktrans, ktrans, ktrans, ktrans,
  ktrans, ktrans,
  ktrans,
- slponum, ktrans, ktrans ),
+ ktrans, ktrans, ktrans ),
 // ktrans, ktrans, ktrans ) };
 
 // This following part causes problems for compiling
